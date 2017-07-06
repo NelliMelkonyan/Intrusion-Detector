@@ -1,0 +1,18 @@
+<header>
+    <div class="topMenu header">
+        <nav class="nav-bar">
+            <div class="nav-container">
+                <i id="nav-menu" class="nav-menu hidden-sm hidden-md hidden-lg" ng-click="myFoo()">
+                    <i class="icon glyphicon glyphicon-list"></i>&nbsp;&nbsp;Menu {{name}}
+                </i>
+                <ul class="nav-list hidden-xs row">
+                    <li id="home" class="active col-sm-3"> <a routerLink="home"><i class="icon glyphicon glyphicon-home"></i>&nbsp;&nbsp;HOME</a></li>
+                    <li id="detected" class="col-sm-3"> <a routerLink="detected-objects"><i class="icon glyphicon glyphicon-user"></i>&nbsp;&nbsp;DETECTED OBJECTS</a></li>
+                    <li id="cameras" class="col-sm-3"> <a routerLink="cameras"><i class="icon glyphicon glyphicon-camera"></i>&nbsp;&nbsp;CAMERAS</a></li>
+                    <li id="login" class="col-sm-3"> <a routerLink="login" id="log"><i class="icon glyphicon glyphicon-log-in"></i>&nbsp;&nbsp;Log In</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</header>
+<router-outlet></router-outlet>
